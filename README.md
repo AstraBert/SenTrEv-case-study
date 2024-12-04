@@ -37,6 +37,7 @@ As already mentioned in the introduction, SenTrEv was employed in the evaluation
 | all-MiniLM-L12-v2 | MiniLM-L12-H384-uncased by Microsoft | 1B | https://huggingface.co/sentence-transformers/all-MiniLM-L12-v2; **Paper**: Wang et al., 2020 |
 | all-mpnet-base-v2 | mpnet-base by Microsoft | 1B | **HuggingFace**: https://huggingface.co/sentence-transformers/all-mpnet-base-v2; **Paper**: Song et al., 2020 |
 | LaBSE | LaBSE by Google | 17B English sentence pairs + 6B Multi-Lingual Sentence Pairs | **HuggingFace**: https://huggingface.co/sentence-transformers/LaBSE, **Paper**: Feng et al., 2020 |
+
 *Table 1*: Technical details and references for the evaluated embedding models
 
 ### Data and preparation
@@ -63,7 +64,7 @@ SenTrEv applies a very simple evaluation workflow:
 
 See Fig.1 for a visualization of the workflow
 
-![workflow](https://raw.githubusercontent.com/AstraBert/SenTrEv/main/logo.png)
+![workflow](https://raw.githubusercontent.com/AstraBert/SenTrEv-case-study/main/imgs/SenTrEv_Eval_Workflow.png)
 
 _Fig. 1_: Evaluation workflow for SenTrEv
 
