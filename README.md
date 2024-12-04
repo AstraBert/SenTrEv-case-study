@@ -100,7 +100,10 @@ The metrics used to evaluate performance were:
 
 ### Factors influencing perfomance
 
-We averaged across all 
+
+
+![Figure 2](https://raw.githubusercontent.com/AstraBert/SenTrEv-case-study/main/imgs/Figure_2.png)
+_Fig. 2_: Factors influencing model performances: **A** is chunking size, **B** is text percentage and **C** is distance metrics
 
 ### Code and data availability statement
 
