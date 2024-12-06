@@ -34,9 +34,9 @@ As already mentioned in the introduction, SenTrEv was employed in the evaluation
 
 | Model | Base Model | Number of Parameters | Reference |
 | ----------------- | ------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------- |
-| all-MiniLM-L12-v2 | MiniLM-L12-H384-uncased by Microsoft | 1B | https://huggingface.co/sentence-transformers/all-MiniLM-L12-v2; **Paper**: Wang et al., 2020 |
+| all-MiniLM-L12-v2 | MiniLM-L12-H384-uncased by Microsoft | 1B | **HuggingFace**: https://huggingface.co/sentence-transformers/all-MiniLM-L12-v2; **Paper**: Wang et al., 2020 |
 | all-mpnet-base-v2 | mpnet-base by Microsoft | 1B | **HuggingFace**: https://huggingface.co/sentence-transformers/all-mpnet-base-v2; **Paper**: Song et al., 2020 |
-| LaBSE | LaBSE by Google | 17B English sentence pairs + 6B Multi-Lingual Sentence Pairs | **HuggingFace**: https://huggingface.co/sentence-transformers/LaBSE, **Paper**: Feng et al., 2020 |
+| LaBSE | LaBSE by Google | 17B English sentence pairs + 6B Multi-Lingual Sentence Pairs | **HuggingFace**: https://huggingface.co/sentence-transformers/LaBSE; **Paper**: Feng et al., 2020 |
 
 *Table 1*: Technical details and references for the evaluated embedding models
 
@@ -87,7 +87,7 @@ The metrics used to evaluate performance were:
 
 - **Mean Reciprocal Ranking (MRR)**: MRR defines how high in ranking the correct context is placed among the retrieved results. MRR@10 was used, meaning that for each retrieval operation 10 items were returned and an evaluation was carried out for the ranking of the correct context, which was then normalized between 0 and 1 (already implemented in SenTrEv). An MRR of 1 means that the correct context was ranked first, whereas an MRR of 0 means that it wasn't retrieved. MRR is calculated with the following general equation:
 
-  $MRR = \frac{ranking + Nretrieved - 1}{Nretrieved}$ (eq.2)
+  $MRR = 1 - \frac{ranking - 1}{Nretrieved}$ (eq.2)
 
   When the correct context is not retrieved, MRR is automatically set to 0. MRR is calculated for each retrieval operation, then the average and standard deviation are calculated and reported.
 - **Time performance**: for each retrieval operation the time performance in seconds is calculated: the average and standard deviation are then reported.

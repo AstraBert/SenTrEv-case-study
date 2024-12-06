@@ -7,7 +7,7 @@ import seaborn as sns
 repo_path = "eval/"
 
 # Define the output directory for plots
-output_dir = "eval/summary_plots/"
+output_dir = "summary_plots/"
 os.makedirs(output_dir, exist_ok=True)
 
 # Initialize an empty DataFrame to store data from all folders
